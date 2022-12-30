@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Packages to create the portfolio website
+
+npm i @emailjs/browser  Implementing the contact the contact form
+npm i @fortawesome/free-brands-svg-icons Implementing the fonts icons
+npm i @fortawesome/free-solid-svg-icons Implementing the fonts icons
+# Solid Icons are going to be used in the navigation on the left side
+npm i @fortawesome/react-fontawesome this is a wrapup for the font awesome
+npm i animate.css it is a css library for animating the objects
+npm i gsap-trial it is for advanced animation
+npm i loaders.css it used for packman
+npm i react-leaflet it is a wrapup library to use the maps
+npm i react-loaders this is for react integration
+npm i react-router-dom this is a standard package for react
+npm i sass is used for the css
