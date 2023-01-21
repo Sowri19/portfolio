@@ -1,9 +1,10 @@
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-// import { faAws } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAws, faHtml5, faCss3, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders'
+
 const About =()=>{
     const [letterClass,setLetterClass] = useState('text-animate');
     useEffect(()=>{
@@ -13,6 +14,7 @@ const About =()=>{
         // set Timeout function not working 
     }, []);
     return(
+        <>
         <div className="container about-page">
             <div className= 'text-zone'>
             <h1>
@@ -47,6 +49,8 @@ const About =()=>{
           </div>
     </div>
         </div>
+        <Loader type="pacman" />
+        </>
     )
 }
 
