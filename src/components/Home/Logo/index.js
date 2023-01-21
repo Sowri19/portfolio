@@ -3,10 +3,8 @@ import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
-
 // all the elements like svg container, svg, and the solid image are going to be hidden
 // inorder to manipulate with them and apply gsep animation to it we need to use useRef three elements.
-
 
 const Logo = () => {
   const bgRef = useRef()
@@ -21,10 +19,11 @@ const Logo = () => {
         duration: 1,
         opacity: 1,
       })
-      .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
-      })
+    //   drawing animation is not working properly
+    //   .from(outlineLogoRef.current, {
+    //     drawSVG: 0,
+    //     duration: 1,
+    //   })
 
     gsap.fromTo(
       solidLogoRef.current,
