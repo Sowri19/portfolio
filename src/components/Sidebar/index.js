@@ -5,12 +5,27 @@ import LogoSubtitle from "../../assets/images/logo_sub.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome,faUser,faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
-const Sidebar =() => (
+import { useEffect, useState } from "react";
+const Sidebar =() => {
+    const [letterClass,setLetterClass] = useState('text-animate');
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLetterClass('text-animate-hover')
+        }, 4000)
+        // set Timeout function not working 
+    }, []);
+    return( 
 <div className="nav-bar">
     <Link className="logo" to ="/">
         <img src = {LogoS} alt="logo" />
-        <img className='sub-logo' src = {LogoSubtitle} alt="Sowri" />
+        {/* <img className='sub-logo' src = {LogoSubtitle} alt="Sowri" /> */}
+        <h3>
+                <span className={letterClass}>S</span>
+                <span className={`${letterClass} _12`}>O</span>
+                <span className={`${letterClass} _13`}>W</span>
+                <span className={`${letterClass} _14` }>R</span>
+                <span className={`${letterClass} _15` }>I</span>
+        </h3>
     </Link>
 <nav>
     <NavLink exact = "true" activeclassname="active" to="/">
@@ -43,6 +58,9 @@ const Sidebar =() => (
     </li>
 </ul>
 </div>
-)
+    )
+}
+
+
 
 export default Sidebar;
