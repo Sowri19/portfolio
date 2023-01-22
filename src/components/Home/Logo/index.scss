@@ -2,18 +2,20 @@
     z-index: 0;
     width: 400px;
     height: 609px;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     right: 15%;
     bottom: 0;
     left: auto;
     margin: auto;
-  
-    svg {
+    // transition: opacity 1s ease-in-out;
+
+    img {
       width: 100%;
       height: auto;
       bottom: 0;
+      transition: opacity 1s ease-in-out;
       transform: rotateZ(30deg) !important;
     }
   
@@ -31,7 +33,7 @@
     }
   }
   
-  .svg-container {
-    stroke: #ffd700;
-    stroke-width: 10;
-  }
+  // .svg-container {
+  //   stroke: #ffd700;
+  //   stroke-width: 10;
+  // }
