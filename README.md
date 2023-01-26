@@ -104,3 +104,5 @@ npm i sass is used for the css
 
 ## vite is an alternative for npm create-react-webpack-- it provides lighting fast server for the development
 ## in order to run the vite we need to run the command "npm run dev"
+
+## If we are using Header.module.scss we can specify same class name in the different module without thinking about their clashes of their css properties.
