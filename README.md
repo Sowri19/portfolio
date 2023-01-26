@@ -84,3 +84,23 @@ npm i react-leaflet it is a wrapup library to use the maps
 npm i react-loaders this is for react integration
 npm i react-router-dom this is a standard package for react
 npm i sass is used for the css
+
+# Personal-Portfolio-2-starter
+  * https://youtubebinjanportfolio.pages.dev
+
+## Fonts link
+  * https://stijndv.com/fonts/Eudoxus-Sans.css
+
+## Slick slider links
+  * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css
+  
+  * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css
+  
+## NodeJS
+  * https://nodejs.org/en/download/
+  
+## Git
+  * https://git-scm.com/downloads
+
+## vite is an alternative for npm create-react-webpack-- it provides lighting fast server for the development
+## in order to run the vite we need to run the command "npm run dev"
