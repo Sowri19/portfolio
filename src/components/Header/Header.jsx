@@ -8,12 +8,12 @@ const Header = () => {
         <div className={css.name}>
           Sowri
         </div>
-        <ul>
+        <ul className={`flexCenter ${css.menu}`}>
           <li><a href="">Services</a></li>
           <li><a href="">Experience</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">Testimonials</a></li>
-          <li><a href=""></a>
+          <li className={`flexCenter ${css.phone}`}><a href=""></a>
           <p>+123 456 789</p>
           <BiPhoneCall size={"40px"} />
           </li>
