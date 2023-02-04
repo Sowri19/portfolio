@@ -1,25 +1,42 @@
 import React from 'react'
 import css from './Header.module.scss';
-import {BiPhoneCall} from 'react-icons/bi';
+import {BiMenuAltLeft, BiPhoneCall} from 'react-icons/bi';
+import {motion} from 'framer-motion';
+import {getMenuStyles, headerVariants} from '../../utils/motion';
+
 const Header = () => {
+  const [menuOpened, setMenuOpened] = React.useState(false);
+
+
   return (
-    <div className={`paddings ${css.wrapper}`}>
+    <motion.div 
+    initial="hidden"
+    whileInView="show"
+    variants={headerVariants}
+    viewPort={{once: false, amount: 0.25}}
+    className={`paddings ${css.wrapper}`}>
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
           Sowri
         </div>
-        <ul className={`flexCenter ${css.menu}`}>
+        <ul
+        style={getMenuStyles(menuOpened)}
+        className={`flexCenter ${css.menu}`}>
           <li><a href="">Services</a></li>
           <li><a href="">Experience</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">Testimonials</a></li>
           <li className={`flexCenter ${css.phone}`}><a href=""></a>
-          <p>+123 456 789</p>
+          <p>857-381-1427</p>
           <BiPhoneCall size={"40px"} />
           </li>
         </ul>
+        {/* Medium and small screens */}
+        <div className={css.menuIcon} onClick={()=>setMenuOpened((prev)=>!prev)}>
+          <BiMenuAltLeft size={"30px"} />
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
