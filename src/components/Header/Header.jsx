@@ -3,10 +3,11 @@ import css from './Header.module.scss';
 import {BiMenuAltLeft, BiPhoneCall} from 'react-icons/bi';
 import {motion} from 'framer-motion';
 import {getMenuStyles, headerVariants} from '../../utils/motion';
+import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = React.useState(false);
-
+  const headerShadow = useHeaderShadow();
 
   return (
     <motion.div 
@@ -14,7 +15,10 @@ const Header = () => {
     whileInView="show"
     variants={headerVariants}
     viewPort={{once: false, amount: 0.25}}
-    className={`paddings ${css.wrapper}`}>
+    className={`paddings ${css.wrapper}`}
+    style= {{boxShadow: headerShadow}}
+    >
+
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
           Sowri
