@@ -1,12 +1,12 @@
 import React from "react";
 import css from "./Hero.module.scss";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     // adding the global styling class to the section "paddings"
     <section className={`paddings ${css.wrapper}`}>
-      <div className={`innerWidth ${css.container}`}>
+      <motion.div className={`innerWidth ${css.container}`}>
         {/* Upper Elements */}
         <div className={css.upperElements}>
           <span className="primaryText">
@@ -46,7 +46,7 @@ const Hero = () => {
             <span>UI/UX DESIGNER</span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
