@@ -1,30 +1,43 @@
 import React from "react";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
+import {staggerContainer,fadeIn} from "../../utils/motion";
 
 const Hero = () => {
   return (
     // adding the global styling class to the section "paddings"
     <section className={`paddings ${css.wrapper}`}>
-      <motion.div className={`innerWidth ${css.container}`}>
+      <motion.div 
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once: false, amount: 0.5}}
+      className={`innerWidth ${css.container}`}>
         {/* Upper Elements */}
         <div className={css.upperElements}>
-          <span className="primaryText">
+
+          <motion.span 
+          variants={fadeIn("right","tween", 0.2, 1 )}
+          className="primaryText">
+
             Hey There,
             <br />
             I'm Sowri.
-          </span>
+          </motion.span>
 
-          <span className="secondaryText">
+          <motion.span 
+          variants={fadeIn("left","tween", 0.4, 1 )}
+          className="secondaryText">
             I design beautiful simple
             <br />
             things, And I love what i do{" "}
-          </span>
+          </motion.span>
+
         </div>
 
-        <div className={css.person}>
+        <motion.div className={css.person}>
           <img src="./person1.png" alt="" />
-        </div>
+        </motion.div>
 
         <a className={css.email} href="mailto:sowri1219@gmail.com">
           sowri1219@gmail.com
