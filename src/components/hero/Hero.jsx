@@ -35,8 +35,12 @@ const Hero = () => {
 
         </div>
 
-        <motion.div className={css.person}>
-          <img src="./person1.png" alt="" />
+        <motion.div
+        variants={fadeIn("up","tween", 0.3, 1 )}
+        className={css.person}>
+          <motion.img 
+          variants={fadeIn("up","tween", 0.5, 1.3 )}
+          src="./person.png" alt="" />
         </motion.div>
 
         <a className={css.email} href="mailto:sowri1219@gmail.com">
@@ -45,19 +49,19 @@ const Hero = () => {
 
         {/* Lower Elements */}
         <div className={css.lowerElements}>
-          <div className={css.experience}>
-            <div className="primaryText">3</div>
+        <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
+            <div className="primaryText">10</div>
             <div className="secondaryText">
               <div>Years</div>
               <div>Experience</div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={css.certificate}>
+          <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
             <img src="./certificate.png" alt="" />
             <span>CERTIFIED PROFESSIONAL</span>
             <span>UI/UX DESIGNER</span>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>
