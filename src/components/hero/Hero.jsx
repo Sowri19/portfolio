@@ -50,7 +50,7 @@ const Hero = () => {
         {/* Lower Elements */}
         <div className={css.lowerElements}>
         <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
-            <div className="primaryText">10</div>
+            <div className="primaryText">3</div>
             <div className="secondaryText">
               <div>Years</div>
               <div>Experience</div>
