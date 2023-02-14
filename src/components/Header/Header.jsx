@@ -1,47 +1,58 @@
-import React from 'react'
-import css from './Header.module.scss';
-import {BiMenuAltLeft, BiPhoneCall} from 'react-icons/bi';
-import {motion} from 'framer-motion';
-import {getMenuStyles, headerVariants} from '../../utils/motion';
+import React, { useEffect, useRef, useState } from "react";
+import css from "./Header.module.scss";
+import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { getMenuStyles, headerVariants } from "../../utils/motion";
+import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
-  const [menuOpened, setMenuOpened] = React.useState(false);
+  const menuRef = useRef(null);
+  const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
-  return (
-    <motion.div 
-    initial="hidden"
-    whileInView="show"
-    variants={headerVariants}
-    viewPort={{once: false, amount: 0.25}}
-    className={`paddings ${css.wrapper}`}
-    style= {{boxShadow: headerShadow}}
-    >
+  //to handle click outside of sidebar on mobile
+  useOutsideAlerter({
+    menuRef,
+    setMenuOpened,
+  });
 
-      <div className={`flexCenter innerWidth ${css.container}`}>
-        <div className={css.name}>
-          Sowri
-        </div>
+  return (
+    <motion.div
+      variants={headerVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`bg-primary paddings ${css.wrapper}`}
+      viewport={{ once: true, amount: 0.25 }}
+      style={{boxShadow: headerShadow}}
+    >
+      <div className={`innerWidth ${css.container} flexCenter`}>
+        <div className={css.name}>Sowri</div>
         <ul
-        style={getMenuStyles(menuOpened)}
-        className={`flexCenter ${css.menu}`}>
-          <li><a href="">Services</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li className={`flexCenter ${css.phone}`}><a href=""></a>
-          <p>857-381-1427</p>
-          <BiPhoneCall size={"40px"} />
+          className={`flexCenter ${css.menu}`}
+          ref={menuRef}
+          style={getMenuStyles(menuOpened)}
+        >
+          <li><a href="#experties">Services</a></li>
+          <li><a href="#work">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#people">Testimonials</a></li>
+          <li className={`flexCenter ${css.phone}`}>
+            <p>857 381 1427</p>
+            <BiPhoneCall size={"40px"} />
           </li>
         </ul>
-        {/* Medium and small screens */}
-        <div className={css.menuIcon} onClick={()=>setMenuOpened((prev)=>!prev)}>
-          <BiMenuAltLeft size={"30px"} />
+
+        {/* for medium and small screens */}
+        <div
+          className={css.menuIcon}
+          onClick={() => setMenuOpened((prev) => !prev)}
+        >
+          <BiMenuAltRight size={30} />
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
