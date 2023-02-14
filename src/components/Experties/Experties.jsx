@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './Experties.module.scss';
-import {projectExperience} from '../../utils/data';
+import {projectExperience, WhatDoIHelp} from '../../utils/data';
 
 const Experties = () => {
   return (
@@ -22,7 +22,8 @@ const Experties = () => {
                  }
               </div>
               <div className={css.rightSide}>
-                rightSide
+              <span className='primaryText'>What do I help? </span>
+                {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
               </div>
         </div>
     </section>
