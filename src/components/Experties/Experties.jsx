@@ -22,9 +22,24 @@ const Experties = () => {
                  }
               </div>
               <div className={css.rightSide}>
+              What do I help? 
               <span className='primaryText'>What do I help? </span>
                 {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
+                 <div className={css.stats}>
+                  <div className={css.stat}>
+                    <span>
+                      
+                    </span>
+                      <span>
+
+                      </span>
+                  </div>
+                  <div className={css.stat}>
+
+                  </div>
+                 </div>
               </div>
+
         </div>
     </section>
   )
