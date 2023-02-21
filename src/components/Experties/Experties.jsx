@@ -33,15 +33,12 @@ const Experties = () => {
             </div>
 
 
-            {/* right */}
+            {/* right side */}
             <motion.div
             variants={textVariant(0.5)}
             className={css.rightSide}>
-
                 <span className='primaryText'>What do I help? </span>
                 {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
-
-
                 <div className={`flexCenter ${css.stats}`}>
                     <div className={`flexCenter ${css.stat}`}>
                         <span className='primaryText'>285+</span>
