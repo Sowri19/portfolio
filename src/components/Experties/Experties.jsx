@@ -25,17 +25,14 @@ const Experties = () => {
               What do I help? 
               <span className='primaryText'>What do I help? </span>
                 {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
-                 <div className={css.stats}>
-                  <div className={css.stat}>
-                    <span>
-                      
-                    </span>
-                      <span>
-
-                      </span>
+                 <div className={`flexCenter ${css.stats}`}>
+                 <div className={`flexCenter ${css.stat}`}>
+                 <span className='primaryText'>285+</span>
+                        <span className='secondaryText'>Project Completed</span>
                   </div>
-                  <div className={css.stat}>
-
+                  <div className={`flexCenter ${css.stat}`}>
+                  <span className='primaryText'>190+</span>
+                        <span className='secondaryText'>Happy Clients</span>
                   </div>
                  </div>
               </div>
