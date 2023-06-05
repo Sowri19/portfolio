@@ -3,6 +3,7 @@ import css from "./styles/app.module.scss";
 import Hero from "./components/hero/hero";
 import Experties from "./components/Experties/Experties";
 import Works from "./components/Works/Works";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 const App = () => {
   //don't forget to add font link in index.html
@@ -11,6 +12,7 @@ const App = () => {
     <Hero />
     <Experties/>
     <Works/>
+    <Portfolio/>
   </div>;
 };
 
