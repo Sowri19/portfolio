@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Works.module.scss'
 import {motion} from 'framer-motion'
-import { staggerChildren, textVariant2 } from '../../utils/motion'
+import { staggerChildren, textVariant2, zoomIn, fadeIn } from '../../utils/motion'
 import { workExp } from "../../utils/data";
 
 const Works = () => {
@@ -30,12 +30,12 @@ const Works = () => {
                     </motion.div>);
                 })
             }
-            <div className={css.progressbar}>
-                <div className={css.line}></div>
+            <motion.div variants={zoomIn(1, 1)} className={css.progressbar}>
+                <motion.div variants={fadeIn("down", "tween", 2, 1.5)} className={css.line}></motion.div>
                 <div><div className={css.circle} style={{background: "#286F6C"}}></div></div>
                 <div><div className={css.circle} style={{background: "#F2704E"}}></div></div>
                 <div><div className={css.circle} style={{background: "#EEC048"}}></div></div>
-            </div>
+            </motion.div>
         </div>
     </div>
     </motion.section>

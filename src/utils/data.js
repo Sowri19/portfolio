@@ -4,19 +4,19 @@ import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
     name: "Website Design",
-    projects: 76,
+    projects: 10,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
     name: "Mobile App Design",
-    projects: 63,
+    projects: 3,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
     name: "Brand Identity",
-    projects: 47,
+    projects: 2,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
@@ -29,25 +29,25 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "BlockFit, (CTO, Startup), USA",
+    tenure: "Jan 2023 - Present",
+    role: "Web and Mobile App Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "BlockFit allows companies to manage inventory throughout the whole product lifecycle – inception to destruction, w/ following tech-stack - NFC chips, Industrial Readers, Mobile Phone NFC Readers, Blockchain, Software",
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "Fingertipzz.com, India",
+    tenure: "Sep 2020 - Dec 2021",
+    role: "Founder, Fullstack Designer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Built FingerTipzz app on Google Play Store and IOS with website, achieving 150+ downloads, 400+ customers, 10k monthly visitors, 500+ orders, and 2000+ deliveries. Spearheaded 30 third party vendors with 3000+ products from different domains in Food, Groceries and clothing in the market, contracted negotiations to obtain favorable pricing and scheduling parameters",
   },
   {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
+    place: "Amazon, India",
+    tenure: "Sep 2019 - Sep 2020",
+    role: "Transaction Risk Investigator",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Instituted contingency plans for business continuity by cross-training, documentation, and data backups, and processed huge volumes (1500+) of B2B, B2C, and Amazon Pay orders while maintaining optimal investigations per hour.",
   },
 ];
 
