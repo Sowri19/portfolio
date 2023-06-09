@@ -23,6 +23,14 @@
                     color: orange;
                 }
             }
+            > :nth-child(3) {
+                margin-top: 1rem;
+                /* Add spacing between icons */
+                > a {
+                  color: $primary;
+                  margin-right: 1rem;
+                }
+              }
         }
 
 
