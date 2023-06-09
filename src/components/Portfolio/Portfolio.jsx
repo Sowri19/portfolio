@@ -11,6 +11,7 @@ const Portfolio = () => {
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
     className={`paddings ${css.wrapper}`}>
+        <a className="anchor" id="portfolio"></a>
     <div className={`innerWidth flexCenter ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
             <div>
