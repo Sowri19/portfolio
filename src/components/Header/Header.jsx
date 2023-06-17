@@ -36,7 +36,7 @@ const Header = () => {
           <li><a href="#experties">Services</a></li>
           <li><a href="#work">Experience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#people">Testimonials</a></li>
+          <li><a href="public/SOWRI SAMPATH RESUME.pdf" download>Resume</a></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 (857) 381 1427</p>
             <BiPhoneCall size={"40px"} />

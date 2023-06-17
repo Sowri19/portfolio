@@ -23,8 +23,9 @@ const Portfolio = () => {
                 </p>
             </div>
             <span className="secondaryText">
-                Explore More Works
-            </span>
+    <a href="https://github.com/sowri19" target="_blank" rel="noopener noreferrer">Explore More Works</a>
+</span>
+
         </div>
         {/* Images */}
         <div className={`flexCenter ${css.showCase}`}>
