@@ -29,22 +29,22 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
-    place: "BlockFit(Startup), USA",
-    tenure: "Jan 2023 - Present",
+    place: "BlockFit, USA",
+    tenure: "Jan-2023 - Present",
     role: "(CTO), Web and Mobile App Developer",
     detail:
-      "BlockFit allows companies to manage inventory throughout the whole product lifecycle – inception to destruction, w/ following tech-stack - NFC chips, Industrial Readers, Mobile Phone NFC Readers, Blockchain, Software",
+      "BlockFit(Startup) allows companies to manage inventory throughout the whole product lifecycle – inception to destruction, w/ following tech-stack - NFC chips, Industrial Readers, Mobile Phone NFC Readers, Blockchain, Software",
   },
   {
-    place: "Fingertipzz.com, India",
-    tenure: "Sep 2020 - Dec 2021",
+    place: "Fingertipzz, India",
+    tenure: "Sep-2020 - Dec-2021",
     role: "Founder, Fullstack Developer",
     detail:
       "Built FingerTipzz app on Google Play Store and IOS with website, achieving 150+ downloads, 400+ customers, 10k monthly visitors, 500+ orders, and 2000+ deliveries. Spearheaded 30 third party vendors with 3000+ products from different domains in Food, Groceries and clothing in the market, contracted negotiations to obtain favorable pricing and scheduling parameters",
   },
   {
     place: "Amazon, India",
-    tenure: "Sep 2019 - Sep 2020",
+    tenure: "Sep-2019 - Sep-2020",
     role: "Transaction Risk Investigator",
     detail:
       "Instituted contingency plans for business continuity by cross-training, documentation, and data backups, and processed huge volumes (1500+) of B2B, B2C, and Amazon Pay orders while maintaining optimal investigations per hour.",
