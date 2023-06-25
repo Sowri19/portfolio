@@ -1,108 +1,77 @@
-# Getting Started with Create React App
+## Introduction:
+This is the my second version of personal portfolio website which showcases my skills, projects,to potential employers.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The technologies and tools used in this project:
 
-## Available Scripts
+Tools: VS Code, Git, Github, Figma, Arc Browser Dev Tools, vite (build tool and development server for modern web apps - vite is an alternative for npm create-react-webpack-- it provides lighting fast server for the development)
 
-In the project directory, you can run:
+## Libraries: 
+React(javascript library), React Slick(carousal component library), React Icons, Framer Motion(Complex animations in React)
 
-### `npm start`
+### React Features:
+React Hooks(useState, useEffect, useRef and Custom)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### CSS pre-processor: 
+SASS/SCSS with modular css (with responsive design)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+we are using Header.module.scss we can specify same class name in the different module without thinking about their clashes of their css properties.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# Packages to create the portfolio website
-
-npm i @emailjs/browser  Implementing the contact the contact form
-npm i @fortawesome/free-brands-svg-icons Implementing the fonts icons
-npm i @fortawesome/free-solid-svg-icons Implementing the fonts icons
-# Solid Icons are going to be used in the navigation on the left side
-npm i @fortawesome/react-fontawesome this is a wrapup for the font awesome
-npm i animate.css it is a css library for animating the objects
-npm i gsap-trial it is for advanced animation
-npm i loaders.css it used for packman
-npm i react-leaflet it is a wrapup library to use the maps
-npm i react-loaders this is for react integration
-npm i react-router-dom this is a standard package for react
-npm i sass is used for the css
-
-# Personal-Portfolio-2-starter
-  * https://youtubebinjanportfolio.pages.dev
-
-## Fonts link
-  * https://stijndv.com/fonts/Eudoxus-Sans.css
-
+## Project Structure: 
+Modal View Controller
 ## Slick slider links
   * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css
   
   * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css
-  
-## NodeJS
-  * https://nodejs.org/en/download/
-  
-## Git
-  * https://git-scm.com/downloads
 
-## vite is an alternative for npm create-react-webpack-- it provides lighting fast server for the development
-## in order to run the vite we need to run the command "npm run dev"
+## Installation and setup instructions:
 
-## If we are using Header.module.scss we can specify same class name in the different module without thinking about their clashes of their css properties.
+Clone the git repository by using `git clone git@github.com:Sowri19/portfolio.git` command in your terminal.
+
+Open the cloned folder in your favorite code editor.
+
+Before installing the dependencies make sure you have nodejs installed in your system.(check node version using node -v command in your terminal - https://nodejs.org/en/download/)
+
+Install the dependencies by using `npm install or yarn add` command in your terminal.
+
+Run the vite app by using `npm run dev or yarn run dev` command in your terminal.
+
+Open [http://localhost:5173] to view it in the browser.
+
+## Deployment:
+
+### firebase hosting:
+I have deployed this project using firebase hosting service.
+
+In order to install the firebase cli in your system use the following command in your terminal `npm install -g firebase-tools`
+
+Login to your firebase account using `firebase login` command in your terminal.
+
+Initialize the firebase project using `firebase init` command in your terminal.
+
+Select the Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys and then select the project you want to deploy.
+
+Select the public directory as dist and configure as a single-page app (rewrite all urls to /index.html?y) and then select the project you want to deploy.
+
+Build the project using `npm run build or yarn build` command in your terminal.
+
+Deploy the project using `firebase deploy` command in your terminal.
+
+The webapp is available in the following url: https://sowrii.web.app/
+
+### cloudflare pages (hosting):
+
+I have deployed this project using cloudflare pages hosting service.
+
+I have used the `yarn build` to build the project.
+
+I have then dragged and dropped the dist folder in the cloudflare pages.
+
+The webapp is available in the following url: https://sowri.pages.dev/
+
+## Git commands:
+
+git add .
+
+git commit -m "commit message"
+
+git push origin portfolio-v2
