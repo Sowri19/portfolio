@@ -1,86 +1,89 @@
-# Getting Started with Create React App
+## Introduction:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the my first version of personal portfolio website which showcases my skills, projects,to potential employers.
 
-## Available Scripts
+## The technologies and tools used in this project:
 
-In the project directory, you can run:
+Tools: VS Code, Git, Github, Figma, Arc Browser Dev Tools
 
-### `npm start`
+## Libraries:
+1. React: JavaScript library for building user interfaces.
+2. React Slick: Carousel component library for React.
+3. React Icons: Library for customizable icons in React.
+4. Framer Motion: Library for creating complex animations in React.
+5. @emailjs/browser: Library for sending emails using JavaScript and SMTP.
+6. @fortawesome/free-brands-svg-icons: Library for using free brand icons in SVG format.
+7. @fortawesome/free-solid-svg-icons: Library for using free solid icons in SVG format.
+8. @fortawesome/react-fontawesome: Library for using Font Awesome icons in React.
+9. @testing-library/jest-dom: Library for custom assertions and utilities for Jest.
+10. @testing-library/react: Library for testing React components.
+11. @testing-library/user-event: Library for simulating user events in testing React components.
+12. animate.css: Library for adding CSS animations to elements.
+13. gsap-trial: Library for creating high-performance animations with JavaScript.
+14. loaders.css: Library for adding loading spinners and animations to elements.
+15. react-leaflet: Library for integrating Leaflet maps into React applications.
+16. react-loaders: Library for adding loading animations to React components.
+17. react-router-dom: Library for routing in React applications.
+18. react-scripts: Library for configuring and running React scripts.
+19. sass: Library for using the Sass CSS preprocessor in JavaScript.
+20. web-vitals: Library for measuring web performance metrics.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React Features:
+- React Hooks: useState, useEffect, useRef, and Custom Hooks. These are features introduced in React 16.8 that allow developers to use state and other React features in functional components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+CSS Pre-processor:
+- SASS/SCSS with modular CSS: This involves using the SASS/SCSS syntax for CSS and organizing the CSS code into modular files for better maintainability and reusability. It also supports responsive design.
 
-### `npm test`
+## Project Structure:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Modal View Controller
 
-### `npm run build`
+## Installation and setup instructions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the git repository by using git clone git@github.com:Sowri19/portfolio.git command in your terminal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open the cloned folder in your favorite code editor.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before installing the dependencies make sure you have nodejs installed in your system.(check node version using node -v command in your terminal - https://nodejs.org/en/download/)
 
-### `npm run eject`
+Install the dependencies by using npm install or yarn add command in your terminal.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run the vite app by using npm run dev or yarn run dev command in your terminal.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open [http://localhost:3000] to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Deployment:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## firebase hosting:
 
-## Learn More
+I have deployed this project using firebase hosting service.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In order to install the firebase cli in your system use the following command in your terminal npm install -g firebase-tools
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Login to your firebase account using firebase login command in your terminal.
 
-### Code Splitting
+Initialize the firebase project using firebase init command in your terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Select the Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys and then select the project you want to deploy.
 
-### Analyzing the Bundle Size
+Select the public directory as dist and configure as a single-page app (rewrite all urls to /index.html?y) and then select the project you want to deploy.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Build the project using npm run build or yarn build command in your terminal.
 
-### Making a Progressive Web App
+Deploy the project using firebase deploy command in your terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The webapp is available in the following url: https://myportfolio-433bc.web.app
 
-### Advanced Configuration
+## Git commands:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git add .
 
-### Deployment
+git commit -m "commit message"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+git push origin main
 
-### `npm run build` fails to minify
+git pull origin main
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git merge origin main
 
-
-# Packages to create the portfolio website
-
-npm i @emailjs/browser  Implementing the contact the contact form
-npm i @fortawesome/free-brands-svg-icons Implementing the fonts icons
-npm i @fortawesome/free-solid-svg-icons Implementing the fonts icons
-# Solid Icons are going to be used in the navigation on the left side
-npm i @fortawesome/react-fontawesome this is a wrapup for the font awesome
-npm i animate.css it is a css library for animating the objects
-npm i gsap-trial it is for advanced animation
-npm i loaders.css it used for packman
-npm i react-leaflet it is a wrapup library to use the maps
-npm i react-loaders this is for react integration
-npm i react-router-dom this is a standard package for react
-npm i sass is used for the css
+git fetch origin main
